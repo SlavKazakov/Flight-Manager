@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samis\\source\\repos\\FlightManager2\\FlightManager\\FlightManager.csproj": {}
+    "C:\\Users\\Ben10\\Desktop\\Flight-Manager\\Flight Manager\\FlightManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samis\\source\\repos\\FlightManager2\\FlightManager\\FlightManager.csproj": {
+    "C:\\Users\\Ben10\\Desktop\\Flight-Manager\\Flight Manager\\FlightManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samis\\source\\repos\\FlightManager2\\FlightManager\\FlightManager.csproj",
+        "projectUniqueName": "C:\\Users\\Ben10\\Desktop\\Flight-Manager\\Flight Manager\\FlightManager.csproj",
         "projectName": "FlightManager",
-        "projectPath": "C:\\Users\\samis\\source\\repos\\FlightManager2\\FlightManager\\FlightManager.csproj",
-        "packagesPath": "C:\\Users\\samis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samis\\source\\repos\\FlightManager2\\FlightManager\\obj\\",
+        "projectPath": "C:\\Users\\Ben10\\Desktop\\Flight-Manager\\Flight Manager\\FlightManager.csproj",
+        "packagesPath": "C:\\Users\\Ben10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ben10\\Desktop\\Flight-Manager\\Flight Manager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\samis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ben10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[3.1.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.1, )"
@@ -65,9 +69,21 @@
               "target": "Package",
               "version": "[3.1.0, )"
             },
+            "Microsoft.VisualStudio.Threading": {
+              "target": "Package",
+              "version": "[16.5.132, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "RavenDB.Client": {
+              "target": "Package",
+              "version": "[4.2.8, )"
             }
           },
           "imports": [

@@ -47,9 +47,37 @@ namespace FlightManager.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+            [Display(Name = "Username")]
+            public string Username { get; set; }
+
+            [Required]
+            [Display(Name = "Name")]
+            public string Name { get; set; }
+
+            [Required]
+            [Display(Name = "Surname")]
+            public string Surname { get; set; }
+
+            [Required]
+            [StringLength(10,ErrorMessage ="The EGN must be 10 characters long.")]
+            [Display(Name = "EGN")]
+            public string EGN { get; set; }
+
+
+            [Required]
+            [StringLength(10, ErrorMessage = "The Phone Number must be 10 digits long.")]
+            [Display(Name = "Phone Number")]
+            public string PhoneNumber { get; set; }
+
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
+
+            [Required]
+            [Display(Name = "Adress")]
+            public string Adress { get; set; }
+
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
@@ -75,7 +103,14 @@ namespace FlightManager.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new FlightManagerUser { UserName = Input.Email, Email = Input.Email };
+                var user = new FlightManagerUser { UserName = Input.Username,
+                    Email = Input.Email,
+                    Name = Input.Name,
+                    Surname = Input.Surname,
+                    EGN = Input.EGN,
+                    Adress = Input.Adress,
+                    PhoneNumber = Input.PhoneNumber
+                };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
